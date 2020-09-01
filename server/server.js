@@ -1,3 +1,12 @@
-console.log('in server.js');
+//Import the express library
+//from node_modules/express
+const express = require('express');
 
-//npm === 'node package manager'
+//express exports function that makes a new app
+const app = express();
+
+// start up the server
+
+app.listen(3000, function() {
+    console.log(`I'm listening on 30000`);
+});
